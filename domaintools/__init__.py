@@ -10,7 +10,7 @@ import dns.resolver
 import dns.query
 import logging
 import re
-from urlparse import urlparse
+from urllib.parse import urlparse
 try:
     from .data import TLDS
 except:
