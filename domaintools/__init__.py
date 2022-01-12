@@ -50,9 +50,9 @@ class Domain(object):
     :param domain_string: the domain name to parse.
     :type domain_string: unicode
     '''
-    __whitespace_regex = re.compile(ur'\s+')
+    __whitespace_regex = re.compile(r'\s+')
 
-    __domain_part_regex = re.compile(ur'(?!-)[A-Z\d-]{1,63}(?<!-)$', re.IGNORECASE)
+    __domain_part_regex = re.compile(r'(?!-)[A-Z\d-]{1,63}(?<!-)$', re.IGNORECASE)
 
     def __init__(self, domain_string, allow_private=False):
         if not TLDS:
